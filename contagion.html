@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Contagion</title>
+	<script type="text/javascript" src="javascripts/contagion.js"></script>
+	
+	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" />
+  <!--[if IE]>
+    <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+	
+	<link rel="stylesheet" href="stylesheets/default.css">
+</head>
+
+<body onLoad="populate_form()">
+  <div class="container">
+    <div id="header" class="span-24 last">
+      <h1>Contagion</h1>
+      <h2>A study in infectious disease</h2>
+    </div>
+
+    <div id="body" class="span-24 last">
+      <fieldset>
+        <legend>Simulation Settings</legend>
+        <form action="javascript:start_sim()">
+          <div class="prepend-1 span-5">
+            <div class="form_row"><label>Dimensions:</label> <span class="field"><input type="text" id="grid_width" value="" size="3" /> by <input type="text" id="grid_height" value="" size="3" /></span></div>
+            <div class="form_row"><label>Population:</label> <span class="field"><input type="text" id="population_size" value="" size="3" /></span></div>
+            <div class="form_row"><label>Initially Infected:</label> <span class="field"><input type="text" id="starting_infected" value="" size="3" /></span></div>
+            <div class="form_row"><label>Seconds Per Move:</label> <span class="field"><input type="text" id="seconds_between_moves" value="" size="3" /></span></div>
+          </div>
+          <div class="prepend-3 span-5">
+            <div class="form_row"><label>Contagiousness:</label> <span class="field"><input type="text" id="contagiousness" value="" size="3" /></span></div>
+            <div class="form_row"><label>Contagion Distance:</label> <span class="field"><input type="text" id="contagion_distance" value="" size="3" /></span></div>
+            <div class="form_row"><label>Contagion Period (sec):</label> <span class="field"><input type="text" id="contagion_period" value="" size="3" /></span></div>
+            <div class="form_row"><label>Can Become Immune:</label> <span class="field"><input type="text" id="allow_immunity" value="" size="3" /></span></div>
+            
+          </div>
+          <div class="prepend-3 span-5 last">
+            <div class="form_row"><label>Lethality:</label> <span class="field"><input type="text" id="probability_of_death" value="" size="3" /></span></div>
+            <div class="form_row"><label>Mean Time to Death:</label> <span class="field"><input type="text" id="mean_seconds_to_fate" value="" size="3" /></span></div>
+            <div class="form_row"><label>St. Dev. to Death:</label> <span class="field"><input type="text" id="st_dev_to_fate" value="" size="3" /></span></div>
+          </div>
+        <div class="center"><button type="submit">Start Simulation</button></div>
+          
+        </form>
+      </fieldset>
+  
+      <div id="board"></div>
+    </div>
+  </div>
+
+</body>
+</html>
