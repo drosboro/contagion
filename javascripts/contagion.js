@@ -1,7 +1,34 @@
-// TO DO: need to watch for an "endgame", where no one is infectious anymore.
-// ALSO TO DO: need to create an interface to allow setting of all these fantastic variables...
-// EVEN MORE TO DO: sweet graphical goodness.
+/*
+  CONTAGION
+  
+  A simulation of infectious disease spread
+  
+  Version: 1.0
+  Author:  Dave Rosborough (david at rosborough dot ca)
+  Date:    June 15, 2011
+  Copyright: 2011 Rosborough Tech Co.  
+    
+    This file is part of Contagion.
 
+    Contagion is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Contagion is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Contagion.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+// TODO: statistical display
+// TODO: hide or show parameters (so that kids can "discover" and "build" the simulation)
+// TODO: documentation
+// TODO: licensing
 
 
 var grid_width = 15;
