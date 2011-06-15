@@ -1,0 +1,6 @@
+# Contagion - A simulation of infectious disease spread
+
+Version: 1.0
+Author:  Dave Rosborough (david at rosborough dot ca)
+Date:    June 15, 2011
+Copyright: 2011 Rosborough Tech Co.
