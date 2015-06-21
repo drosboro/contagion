@@ -35,3 +35,9 @@ span.field {
 .center {
   clear: both;
 }
+
+#board {
+  align: center;
+  border: 1px solid green;
+  margin: 0 auto;
+}
